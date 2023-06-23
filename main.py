@@ -1,17 +1,10 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# This is a Python script to read pulsar catalogs and compute expected navigation performance
 
 from math import sqrt
 from astropy.io import fits
 from pulsar_xray_source_catalog import xray_source_catalog
 import matplotlib.pyplot as plt
 import numpy as np
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
 class pulsar:
@@ -84,7 +77,6 @@ def pulsar_accuracy(style,name,area,tObs,sigma_range):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('Jacob')
     study_parameter = 'range'
     pulsar_name = 'B1821-24'
     area=100
@@ -107,5 +99,3 @@ if __name__ == '__main__':
 
     # Show the plot
     plt.show()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
